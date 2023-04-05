@@ -13,14 +13,16 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toobartext"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700">
             <TextView
                 android:id="@+id/close_setting"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="close"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
             <TextView
                 android:id="@+id/update_setting"
                 android:layout_width="wrap_content"
@@ -28,7 +30,8 @@
                 android:text="update"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="280dp"/>
+                android:layout_marginLeft="280dp"
+                android:textColor="@color/white"/>
 
         </androidx.appcompat.widget.Toolbar>
 
@@ -72,10 +75,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/settings_password"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
         android:hint="Full Name..."
-        android:layout_margin="15dp"
-        android:padding="10dp"
-        />
+        android:padding="10dp" />
     <Button
         android:id="@+id/delete"
         android:layout_width="match_parent"
